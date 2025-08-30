@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DinoKids – דינוזאורים לילדים</title>
+  <meta name="description" content="אפליקציה לילדים על דינוזאורים: אנציקלופדיה, חיפוש, סינון וחידון קצר" />
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="manifest" href="pwa/manifest.webmanifest">
+  <meta name="theme-color" content="#2f855a" />
+  <link rel="icon" href="pwa/icon-192.png" sizes="192x192" />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <h1 class="brand">🦕 DinoKids</h1>
+    <nav class="actions" aria-label="פעולות">
+      <button id="toggleTheme" class="btn" aria-pressed="false" title="מצב כהה/בהיר">מצב</button>
+      <button id="openQuiz" class="btn" title="חידון קצר">חידון</button>
+    </nav>
+  </header>
+
+  <main class="container" id="app" role="main">
+    <section class="filters" aria-labelledby="filtersTitle">
+      <h2 id="filtersTitle" class="visually-hidden">מסננים וחיפוש</h2>
+      <label class="field">
+        <span>חיפוש בשם</span>
+        <input id="searchInput" type="search" inputmode="search" placeholder="הקלד/י שם בעברית או באנגלית" autocomplete="off" />
+      </label>
+      <label class="field">
+        <span>תקופה</span>
+        <select id="periodSelect">
+          <option value="">הכול</option>
+          <option>טריאס</option>
+          <option>יורה</option>
+          <option>קרטיקון</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>תזונה</span>
+        <select id="dietSelect">
+          <option value="">הכול</option>
+          <option>צמחוני</option>
+          <option>טורף</option>
+          <option>כללי</option>
+        </select>
+      </label>
+    </section>
+
+    <section aria-labelledby="resultsTitle">
+      <h2 id="resultsTitle">אנציקלודינוזאור</h2>
+      <div id="resultsCount" class="muted" aria-live="polite"></div>
+      <ul id="cards" class="grid" aria-label="רשימת דינוזאורים"></ul>
+    </section>
+  </main>
+
+  <!-- Quiz modal -->
+  <dialog id="quizDialog" aria-labelledby="quizTitle">
+    <form method="dialog" class="quiz">
+      <header class="quiz-head">
+        <h2 id="quizTitle">חידון דינוזאורים</h2>
+        <button value="cancel" class="btn ghost" title="סגירה">✕</button>
+      </header>
+      <div id="quizBody" class="quiz-body" aria-live="polite"></div>
+      <footer class="quiz-foot">
+        <button id="quizNext" class="btn primary" type="button">הבא</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <footer class="sitefoot">
+    <small>גרסת MVP – ללא שרת. עובד גם ב-GitHub Pages. נתונים: <code>data/dinos.json</code>.</small>
+  </footer>
+
+  <script defer src="scripts/app.js"></script>
+</body>
+</html>
