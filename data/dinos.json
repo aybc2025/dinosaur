@@ -1,0 +1,68 @@
+[
+  {
+    "id": "trex",
+    "name_he": "טירנוזאורוס רקס",
+    "name_en": "Tyrannosaurus rex",
+    "period": "קרטיקון",
+    "diet": "טורף",
+    "length_m": 12.3,
+    "weight_t": 8.8,
+    "continent": ["צפון אמריקה"],
+    "traits": ["שיניים ענקיות", "ראייה טובה"]
+  },
+  {
+    "id": "trike",
+    "name_he": "טריצרטופס",
+    "name_en": "Triceratops",
+    "period": "קרטיקון",
+    "diet": "צמחוני",
+    "length_m": 9,
+    "weight_t": 6,
+    "continent": ["צפון אמריקה"],
+    "traits": ["שלוש קרניים", "מגן ראש"]
+  },
+  {
+    "id": "velo",
+    "name_he": "ולוצירפטור",
+    "name_en": "Velociraptor",
+    "period": "קרטיקון",
+    "diet": "טורף",
+    "length_m": 2,
+    "weight_t": 0.015,
+    "continent": ["אסיה"],
+    "traits": ["זריז", "נוצות (כנראה)"]
+  },
+  {
+    "id": "brachio",
+    "name_he": "ברכיוזאורוס",
+    "name_en": "Brachiosaurus",
+    "period": "יורה",
+    "diet": "צמחוני",
+    "length_m": 25,
+    "weight_t": 50,
+    "continent": ["צפון אמריקה"],
+    "traits": ["צוואר ארוך", "גב גבוה"]
+  },
+  {
+    "id": "stego",
+    "name_he": "סטגוזאורוס",
+    "name_en": "Stegosaurus",
+    "period": "יורה",
+    "diet": "צמחוני",
+    "length_m": 9,
+    "weight_t": 5,
+    "continent": ["צפון אמריקה"],
+    "traits": ["לוחות גב", "זנב קוצני"]
+  },
+  {
+    "id": "anky",
+    "name_he": "אנקילוזאורוס",
+    "name_en": "Ankylosaurus",
+    "period": "קרטיקון",
+    "diet": "צמחוני",
+    "length_m": 6.5,
+    "weight_t": 6,
+    "continent": ["צפון אמריקה"],
+    "traits": ["זנב פטיש", "שריון"]
+  }
+]
